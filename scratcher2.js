@@ -222,38 +222,7 @@ Scratcher = (function() {
         //ctx.closePath();
         //ctx.stroke();
     }
-    function draw(context, x, y, width, height){
-        let topCurveHeight = height * 0.3;
-        context.moveTo(x, y + topCurveHeight);
-        // top left curve
 
-   
-        context.bezierCurveTo(x, y, 
-                              x - width / 2, y, 
-                              x - width / 2, y + topCurveHeight
-         );
-        
-        // bottom left curve
-        context.bezierCurveTo(x - width / 2, y + (height + topCurveHeight) / 2, 
-                              x, y + (height + topCurveHeight) / 2, 
-                              x, y + height
-         );
-        
-        // bottom right curve
-        context.bezierCurveTo(x, y + (height + topCurveHeight) / 2, 
-                              x + width / 2, y + (height + topCurveHeight) / 2, 
-                              x + width / 2, y + topCurveHeight
-         );
-        
-        // top right curve
-        context.bezierCurveTo(x + width / 2, y, 
-                              x, y, 
-                              x, y + topCurveHeight
-         );
-        
-        
-
-    };
     /**
      * Draw a scratch line
      * 
