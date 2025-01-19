@@ -63,7 +63,7 @@ flex-direction: column;
 font-size: calc(4rem + 0.8vw);
 text-align: right;
 padding-right: 10px;
-text-shadow: 4px 6px #FFFFFF;
+text-shadow: -1px -1px 0 #ffdf75, 1px -1px 0 #756000, -1px 1px 0 #584100, 1px 1px 0 #584100,  2px  6px 6px #4d4c4c, 4px  12px 6px #fffdfd;
 } 
 #or {
   font-size: calc(2rem + 0.8vw);
@@ -93,7 +93,7 @@ text-align: right;
   
   #t1 {
     display:inline-table;
-    text-align: center;
+    /*text-align: center;*/
     width: calc(50% - 10px);
 
     /*transform: translateX(-10%) scale(0.8, 0.8);*/
@@ -116,6 +116,7 @@ text-align: right;
 
 }
 #boy{
+  text-align: right;
   line-height: 20vh !important;
 }
 .images{
@@ -190,7 +191,7 @@ text-align: right;
     font-size: calc(0.5rem + 0.70vw);
   }
   .pagetop h3 {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 1vh);
   }
   #scratcher-box {
     width: 18em;
@@ -200,11 +201,11 @@ text-align: right;
   }
   #t1
   {
-    width: calc(40% - 10px);
+    width: calc(50% - 10px);
 
   }
   #reveal {
-    width: calc(45% - 10px);
+    width: calc(50% - 10px);
 
   }
   .pagetop {
@@ -212,8 +213,22 @@ text-align: right;
   }
   
 }
-@media (min-width: 672px) { 
-  
+@media (min-height:336px) and (min-width: 672px) { 
+  .pagetop h1 {
+    font-size: calc(5rem + 1vw);
+  }
+  .pagetop h4 {
+    font-size: calc(0.5rem + 0.70vw);
+  }
+  .pagetop h3 {
+    font-size: calc(1rem + 2vh);
+  }
+  #scratcher-box {
+    width: 20em;
+    height: 20em;
+    top: 50%;
+    left: 0%;
+  }
   #t1
   {
     width: calc(55% - 10px);
@@ -222,9 +237,12 @@ text-align: right;
     width: calc(55% - 10px);
   }
 }
-@media screen and (max-height:321px){ 
+@media (max-height:321px) and (max-width:575px){ 
   .pagetop h1 {
-    font-size: calc(1rem + 6vw);
+    font-size: calc(2rem + 6vw);
+  }
+  .pagetop h3 {
+    font-size: calc(1rem + 0.2vh);
   }
   #scratcher-box {
     width: 16em;
@@ -238,7 +256,7 @@ text-align: right;
 }
 @media screen and (max-height:290px){ 
   .pagetop h1 {
-    font-size: calc(1rem + 6vw);
+    font-size: calc(2rem + 6vw);
   }
   #scratcher-box {
     width: 15em;
